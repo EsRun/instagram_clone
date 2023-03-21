@@ -22,6 +22,15 @@ const GlobalStyle = createGlobalStyle`
   .w100 {
     width: 100%;
   }
+
+  :root{
+    // backGround
+    --bg-black: #000;
+    --bg-white: #fff;
+
+    // border
+    --bc-gray: #dbdbdb;
+  }
 `;
 
 export default GlobalStyle;

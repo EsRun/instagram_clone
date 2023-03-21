@@ -1,10 +1,13 @@
 import {
   Section,
-  Article,
-  Footer,
-  LoginContainer,
-  LoginImage,
   Main,
+  Article,
+  LoginImage,
+  LoginContainer,
+  LoginBox,
+  LoginTitle,
+  LoginForm,
+  Footer,
 } from "../../style/auth/LoginStyle";
 
 const Login = () => {
@@ -14,9 +17,22 @@ const Login = () => {
         <Main>
           <Article>
             <LoginImage>Login Images</LoginImage>
-            <LoginContainer>Login Input</LoginContainer>
+            <LoginContainer>
+              <LoginBox>
+                <LoginTitle
+                  data-visualcompletion="css-img"
+                  aria-label="Instagram"
+                  role="img"
+                />
+              </LoginBox>
+              <LoginForm>
+                <input></input>
+                <input></input>
+              </LoginForm>
+            </LoginContainer>
           </Article>
         </Main>
+        <Footer />
       </Section>
     </>
   );
