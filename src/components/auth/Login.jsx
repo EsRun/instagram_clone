@@ -1,7 +1,25 @@
-import React from "react";
+import {
+  Section,
+  Article,
+  Footer,
+  LoginContainer,
+  LoginImage,
+  Main,
+} from "../../style/auth/LoginStyle";
 
 const Login = () => {
-  return <div>로그인 컴포넌트</div>;
+  return (
+    <>
+      <Section>
+        <Main>
+          <Article>
+            <LoginImage>Login Images</LoginImage>
+            <LoginContainer>Login Input</LoginContainer>
+          </Article>
+        </Main>
+      </Section>
+    </>
+  );
 };
 
 export default Login;
