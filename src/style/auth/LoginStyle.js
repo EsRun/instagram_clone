@@ -41,6 +41,24 @@ export const LoginTitle = styled.div`
 export const LoginForm = styled.div`
   display: flex;
   flex-direction: column;
+  margin: 24px 40px 0;
+`;
+
+export const LoginInput = styled.input`
+  margin-bottom: 6px;
+  padding: 9px 0 7px 8px;
+  background-color: #fafafa;
+  border: 1px solid var(--bc-gray);
+`;
+
+export const LoginBtn = styled.button`
+  margin: 8px 0;
+  padding: 7px 16px;
+  background-color: #4cb5f9;
+  border: 0;
+  border-radius: 8px;
+  font-size: 1.4rem;
+  color: #fff;
 `;
 
 // Footer area

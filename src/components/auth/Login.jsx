@@ -7,6 +7,8 @@ import {
   LoginBox,
   LoginTitle,
   LoginForm,
+  LoginInput,
+  LoginBtn,
   Footer,
 } from "../../style/auth/LoginStyle";
 
@@ -26,8 +28,9 @@ const Login = () => {
                 />
               </LoginBox>
               <LoginForm>
-                <input></input>
-                <input></input>
+                <LoginInput placeholder="전화번호, 사용자 이름 또는 이메일" />
+                <LoginInput placeholder="비밀번호" />
+                <LoginBtn>로그인</LoginBtn>
               </LoginForm>
             </LoginContainer>
           </Article>
