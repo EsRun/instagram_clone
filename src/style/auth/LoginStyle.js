@@ -11,7 +11,14 @@ export const Article = styled.article`
   display: flex;
   justify-content: center;
 `;
-export const LoginImage = styled.div``;
+export const LoginImage = styled.div`
+  height: 581.15px;
+  flex-basis: 380.32px;
+  background-image: url(https://static.cdninstagram.com/images/instagram/xig/homepage/phones/home-phones.png?__makehaste_cache_breaker=HOgRclNOosk);
+  background-position: -46px 0;
+  background-size: 468.32px 634.15px;
+  border: 1px solid var(--bc-gray);
+`;
 export const LoginContainer = styled.div`
   display: flex;
   max-width: 350px;

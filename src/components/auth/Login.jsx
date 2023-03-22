@@ -18,7 +18,7 @@ const Login = () => {
       <Section>
         <Main>
           <Article>
-            <LoginImage>Login Images</LoginImage>
+            <LoginImage />
             <LoginContainer>
               <LoginBox>
                 <LoginTitle
