@@ -1,12 +1,24 @@
 import styled from "styled-components";
 // Section
-export const Section = styled.section``;
+export const Section = styled.section`
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+`;
 
 // Login area
-export const Main = styled.main``;
+export const Main = styled.main`
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-shrink: 0;
+`;
 export const Article = styled.article`
   margin: 32px auto 0;
-  padding: 0 auto 32px;
+  padding: 0 0 32px 0;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -17,20 +29,23 @@ export const LoginImage = styled.div`
   background-image: url(https://static.cdninstagram.com/images/instagram/xig/homepage/phones/home-phones.png?__makehaste_cache_breaker=HOgRclNOosk);
   background-position: -46px 0;
   background-size: 468.32px 634.15px;
-  border: 1px solid var(--bc-gray);
 `;
 export const LoginContainer = styled.div`
+  margin-top: 12px;
   display: flex;
   max-width: 350px;
   flex-direction: column;
   flex-grow: 1;
   justify-content: center;
+`;
+
+export const LoginTop = styled.div`
   border: 1px solid var(--bc-gray);
 `;
+
 export const LoginBox = styled.div`
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
   justify-content: center;
   align-items: center;
 `;
@@ -68,5 +83,16 @@ export const LoginBtn = styled.button`
   color: #fff;
 `;
 
+export const LoginLine = styled.div`
+  margin: 10px 40px 18px;
+  display: flex;
+`;
+
 // Footer area
-export const Footer = styled.footer``;
+export const Footer = styled.footer`
+  padding: 0 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.2rem;
+`;
