@@ -13,6 +13,7 @@ import {
   LoginLine,
   LoginFacebook,
   LoginFindPass,
+  SignContainer,
   Footer,
 } from "../../style/auth/LoginStyle";
 
@@ -88,11 +89,17 @@ const Login = () => {
                   <LoginFindPass>비밀번호를 잊으셨나요?</LoginFindPass>
                 </LoginForm>
               </LoginTop>
+              <SignContainer>
+                <div>
+                  <p>계정이 없으신가요?</p>
+                  <a>가입하기</a>
+                </div>
+              </SignContainer>
             </LoginContainer>
           </Article>
         </Main>
         <Footer>
-          <div style={{ marginBottom: "52px" }}>
+          <div style={{ marginBottom: "52px", color: "#8e8e8e" }}>
             <div>
               <ul style={{ display: "flex" }}>
                 <li>Meta</li>

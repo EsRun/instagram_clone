@@ -26,6 +26,8 @@ export const Article = styled.article`
   justify-content: center;
 `;
 export const LoginImage = styled.div`
+  margin-right: 32px;
+  margin-bottom: 12px;
   height: 581.15px;
   flex-basis: 380.32px;
   background-image: url(https://static.cdninstagram.com/images/instagram/xig/homepage/phones/home-phones.png?__makehaste_cache_breaker=HOgRclNOosk);
@@ -103,6 +105,18 @@ export const LoginFindPass = styled(Link)`
   margin-top: 12px;
   text-align: center;
   font-size: 1.2rem;
+`;
+
+export const SignContainer = styled.div`
+  border: 1px solid var(--bc-gray);
+  font-size: 1.4rem;
+  > div {
+    margin: 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 // Footer area
