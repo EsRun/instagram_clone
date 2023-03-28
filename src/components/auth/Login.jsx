@@ -11,6 +11,7 @@ import {
   LoginInput,
   LoginBtn,
   LoginLine,
+  LoginFacebook,
   Footer,
 } from "../../style/auth/LoginStyle";
 
@@ -38,17 +39,41 @@ const Login = () => {
                     <div
                       style={{
                         height: "1px",
-                        backgroundColor: "gray",
+                        flexGrow: "1",
+                        backgroundColor: "#dbdbdb",
                       }}
                     ></div>
-                    <div>또는</div>
+                    <div
+                      style={{
+                        margin: "0 18px",
+                        fontSize: "1.3rem",
+                      }}
+                    >
+                      또는
+                    </div>
                     <div
                       style={{
                         height: "1px",
-                        backgroundColor: "gray",
+                        flexGrow: "1",
+                        backgroundColor: "#dbdbdb",
                       }}
                     ></div>
                   </LoginLine>
+                  <LoginFacebook>
+                    <button>
+                      <span
+                        style={{
+                          backgroundRepeat: "no-repeat",
+                          backgroundPosition: "-414px -259px",
+                          height: "16px",
+                          width: "16px",
+                          backgroundImage:
+                            "https://static.cdninstagram.com/rsrc.php/v3/y5/r/TJztmXpWTmS.png",
+                        }}
+                      ></span>
+                      <span></span>
+                    </button>
+                  </LoginFacebook>
                 </LoginForm>
               </LoginTop>
             </LoginContainer>

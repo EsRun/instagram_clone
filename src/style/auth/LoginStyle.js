@@ -84,8 +84,13 @@ export const LoginBtn = styled.button`
 `;
 
 export const LoginLine = styled.div`
-  margin: 10px 40px 18px;
+  margin: 10px 0 18px;
   display: flex;
+  align-items: center;
+`;
+
+export const LoginFacebook = styled.div`
+  margin: 8px 40px;
 `;
 
 // Footer area
