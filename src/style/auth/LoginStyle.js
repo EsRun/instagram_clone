@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
+
 // Section
 export const Section = styled.section`
   min-height: 100vh;
@@ -40,6 +42,8 @@ export const LoginContainer = styled.div`
 `;
 
 export const LoginTop = styled.div`
+  margin-bottom: 10px;
+  padding: 10px 0;
   border: 1px solid var(--bc-gray);
 `;
 
@@ -61,9 +65,9 @@ export const LoginTitle = styled.div`
 `;
 
 export const LoginForm = styled.div`
+  margin: 24px 40px 10px;
   display: flex;
   flex-direction: column;
-  margin: 24px 40px 0;
 `;
 
 export const LoginInput = styled.input`
@@ -91,6 +95,14 @@ export const LoginLine = styled.div`
 
 export const LoginFacebook = styled.div`
   margin: 8px 40px;
+  display: flex;
+  justify-content: center;
+`;
+
+export const LoginFindPass = styled(Link)`
+  margin-top: 12px;
+  text-align: center;
+  font-size: 1.2rem;
 `;
 
 // Footer area

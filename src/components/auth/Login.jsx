@@ -12,6 +12,7 @@ import {
   LoginBtn,
   LoginLine,
   LoginFacebook,
+  LoginFindPass,
   Footer,
 } from "../../style/auth/LoginStyle";
 
@@ -60,20 +61,31 @@ const Login = () => {
                     ></div>
                   </LoginLine>
                   <LoginFacebook>
-                    <button>
+                    <button
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        border: "0",
+                        background: "none",
+                      }}
+                    >
                       <span
                         style={{
-                          backgroundRepeat: "no-repeat",
-                          backgroundPosition: "-414px -259px",
+                          marginRight: "8px",
+                          display: "inline-block",
                           height: "16px",
                           width: "16px",
-                          backgroundImage:
-                            "https://static.cdninstagram.com/rsrc.php/v3/y5/r/TJztmXpWTmS.png",
+                          backgroundRepeat: "no-repeat",
+                          backgroundPosition: "-414px -259px",
+                          backgroundImage: `url(
+                            "https://static.cdninstagram.com/rsrc.php/v3/y5/r/TJztmXpWTmS.png"
+                          )`,
                         }}
                       ></span>
-                      <span></span>
+                      <span style={{}}>Facebook으로 로그인</span>
                     </button>
                   </LoginFacebook>
+                  <LoginFindPass>비밀번호를 잊으셨나요?</LoginFindPass>
                 </LoginForm>
               </LoginTop>
             </LoginContainer>
