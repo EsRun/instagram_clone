@@ -119,6 +119,30 @@ export const SignContainer = styled.div`
   }
 `;
 
+export const AppContainer = styled.div`
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  div:first-child {
+    text-align: center;
+  }
+  div:last-child {
+    margin: 15px 0;
+    a:first-child {
+      margin-right: 10px;
+    }
+  }
+`;
+
+export const AppLink = styled(Link)`
+  img {
+    height: 40px;
+  }
+`;
+
 // Footer area
 export const Footer = styled.footer`
   padding: 0 16px;

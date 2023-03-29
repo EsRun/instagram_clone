@@ -14,7 +14,9 @@ import {
   LoginFacebook,
   LoginFindPass,
   SignContainer,
+  AppContainer,
   Footer,
+  AppLink,
 } from "../../style/auth/LoginStyle";
 
 const Login = () => {
@@ -95,6 +97,33 @@ const Login = () => {
                   <a>가입하기</a>
                 </div>
               </SignContainer>
+              <AppContainer>
+                <div>
+                  <p>앱을 다운로드하세요.</p>
+                </div>
+                <div>
+                  <AppLink
+                    to={
+                      "https://play.google.com/store/apps/details?id=com.instagram.android&referrer=utm_source%3Dinstagramweb%26utm_campaign%3DloginPage%26ig_mid%3D9A60607F-D1D8-4F1B-9D79-72FEC517F519%26utm_content%3Dlo%26utm_medium%3Dbadge"
+                    }
+                  >
+                    <img
+                      src="https://static.cdninstagram.com/rsrc.php/v3/ye/r/UtJtFmFLCiD.png"
+                      alt="google"
+                    />
+                  </AppLink>
+                  <AppLink
+                    to={
+                      "ms-windows-store://pdp/?productid=9nblggh5l9xt&referrer=appbadge&source=www.instagram.com&mode=mini&pos=0%2C0%2C1920%2C1040"
+                    }
+                  >
+                    <img
+                      src="https://static.cdninstagram.com/rsrc.php/v3/yw/r/LBxTdceDfgS.png"
+                      alt="microsoft"
+                    />
+                  </AppLink>
+                </div>
+              </AppContainer>
             </LoginContainer>
           </Article>
         </Main>
