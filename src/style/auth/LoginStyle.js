@@ -151,3 +151,10 @@ export const Footer = styled.footer`
   align-items: center;
   font-size: 1.2rem;
 `;
+
+export const Ul = styled.ul`
+  display: flex;
+  li {
+    padding: 0 1rem;
+  }
+`;

@@ -16,6 +16,7 @@ import {
   SignContainer,
   AppContainer,
   Footer,
+  Ul,
   AppLink,
 } from "../../style/auth/LoginStyle";
 
@@ -130,7 +131,7 @@ const Login = () => {
         <Footer>
           <div style={{ marginBottom: "52px", color: "#8e8e8e" }}>
             <div>
-              <ul style={{ display: "flex" }}>
+              <Ul>
                 <li>Meta</li>
                 <li>소개</li>
                 <li>블로그</li>
@@ -144,7 +145,7 @@ const Login = () => {
                 <li>Instagram Lite</li>
                 <li>연락처 업로드 & 비사용자</li>
                 <li>Meta Verified</li>
-              </ul>
+              </Ul>
             </div>
             <div
               style={{
