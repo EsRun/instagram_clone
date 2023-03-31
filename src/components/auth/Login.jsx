@@ -129,7 +129,7 @@ const Login = () => {
           </Article>
         </Main>
         <Footer>
-          <div style={{ marginBottom: "52px", color: "#8e8e8e" }}>
+          <div style={{ marginBottom: "52px" }}>
             <div>
               <Ul>
                 <li>Meta</li>
@@ -155,7 +155,7 @@ const Login = () => {
                 justifyContent: "center",
               }}
             >
-              <select>
+              <select style={{ border: "0" }}>
                 <option>한국어</option>
               </select>
               <div>© 2023 Instagram from Meta</div>

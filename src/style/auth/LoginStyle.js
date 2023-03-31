@@ -150,6 +150,10 @@ export const Footer = styled.footer`
   flex-direction: column;
   align-items: center;
   font-size: 1.2rem;
+  color: #8e8e8e;
+  select {
+    color: #8e8e8e;
+  }
 `;
 
 export const Ul = styled.ul`
