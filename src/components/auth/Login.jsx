@@ -17,6 +17,7 @@ import {
   AppContainer,
   Footer,
   Ul,
+  Li,
   AppLink,
 } from "../../style/auth/LoginStyle";
 
@@ -132,19 +133,19 @@ const Login = () => {
           <div style={{ marginBottom: "52px" }}>
             <div>
               <Ul>
-                <li>Meta</li>
-                <li>소개</li>
-                <li>블로그</li>
-                <li>채용 정보</li>
-                <li>도움말</li>
-                <li>API</li>
-                <li>개인정보처리방침</li>
-                <li>약관</li>
-                <li>인기 계정</li>
-                <li>위치</li>
-                <li>Instagram Lite</li>
-                <li>연락처 업로드 & 비사용자</li>
-                <li>Meta Verified</li>
+                <Li>Meta</Li>
+                <Li>소개</Li>
+                <Li>블로그</Li>
+                <Li>채용 정보</Li>
+                <Li>도움말</Li>
+                <Li>API</Li>
+                <Li>개인정보처리방침</Li>
+                <Li>약관</Li>
+                <Li>인기 계정</Li>
+                <Li>위치</Li>
+                <Li>Instagram Lite</Li>
+                <Li>연락처 업로드 & 비사용자</Li>
+                <Li>Meta Verified</Li>
               </Ul>
             </div>
             <div

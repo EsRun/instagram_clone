@@ -162,3 +162,7 @@ export const Ul = styled.ul`
     padding: 0 1rem;
   }
 `;
+
+export const Li = sytled.li`
+
+`;
