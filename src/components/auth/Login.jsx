@@ -19,6 +19,9 @@ import {
   Ul,
   Li,
   AppLink,
+  Select,
+  FooterBox,
+  FooterLine,
 } from "../../style/auth/LoginStyle";
 
 const Login = () => {
@@ -130,7 +133,7 @@ const Login = () => {
           </Article>
         </Main>
         <Footer>
-          <div style={{ marginBottom: "52px" }}>
+          <FooterBox style={{ marginBottom: "52px" }}>
             <div>
               <Ul>
                 <Li>Meta</Li>
@@ -148,7 +151,7 @@ const Login = () => {
                 <Li>Meta Verified</Li>
               </Ul>
             </div>
-            <div
+            <FooterLine
               style={{
                 padding: "12px 0",
                 display: "flex",
@@ -156,12 +159,12 @@ const Login = () => {
                 justifyContent: "center",
               }}
             >
-              <select style={{ border: "0" }}>
+              <Select>
                 <option>한국어</option>
-              </select>
+              </Select>
               <div>© 2023 Instagram from Meta</div>
-            </div>
-          </div>
+            </FooterLine>
+          </FooterBox>
         </Footer>
       </Section>
     </>

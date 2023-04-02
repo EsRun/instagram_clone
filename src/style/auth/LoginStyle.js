@@ -156,6 +156,12 @@ export const Footer = styled.footer`
   }
 `;
 
+export const FooterBox = styled.div`
+  margin-bottom: 52px;
+`;
+
+export const FooterLine = styled.div``;
+
 export const Ul = styled.ul`
   display: flex;
   li {
@@ -165,4 +171,8 @@ export const Ul = styled.ul`
 
 export const Li = sytled.li`
 
+`;
+
+export const Select = styled.select`
+  border: 0;
 `;
