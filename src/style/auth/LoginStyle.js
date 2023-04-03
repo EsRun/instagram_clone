@@ -160,7 +160,12 @@ export const FooterBox = styled.div`
   margin-bottom: 52px;
 `;
 
-export const FooterLine = styled.div``;
+export const FooterLine = styled.div`
+  padding: 12px 0;
+  display: flex;
+  align=items: center;
+  justify-content: center;
+`;
 
 export const Ul = styled.ul`
   display: flex;
@@ -169,9 +174,7 @@ export const Ul = styled.ul`
   }
 `;
 
-export const Li = sytled.li`
-
-`;
+export const Li = styled.li``;
 
 export const Select = styled.select`
   border: 0;

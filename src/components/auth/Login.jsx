@@ -151,14 +151,7 @@ const Login = () => {
                 <Li>Meta Verified</Li>
               </Ul>
             </div>
-            <FooterLine
-              style={{
-                padding: "12px 0",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-              }}
-            >
+            <FooterLine>
               <Select>
                 <option>한국어</option>
               </Select>
