@@ -3,8 +3,10 @@ import { SideNav, Contents } from "../components";
 const Main = () => {
   return (
     <>
-      <SideNav></SideNav>
-      <Contents></Contents>
+      <div style={{ display: "flex" }}>
+        <SideNav></SideNav>
+        <Contents></Contents>
+      </div>
     </>
   );
 };
