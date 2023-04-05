@@ -1,23 +1,22 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-// 인증
-const authSlice = createSlice({
+const initialState = {
+  isAuth: false,
+};
+
+export const authSlice = createSlice({
   name: "auth",
-  initialState: {
-    isAuth: false,
-    userName: "",
-  },
+  initialState,
   reducers: {
-    logIn(state, action) {
+    login: (state, action) => {
       state.isAuth = action.payload.isAuth;
-      state.userName = action.payload.userName;
     },
-    logOut(state, action) {
-      state.isAuth = false;
-      state.userName = "";
+    logout: (state) => {
+      state.isAuth = !state.isAuth;
     },
   },
 });
 
-export const authActions = authSlice.actions;
+export const { login, logout } = authSlice.actions;
+
 export default authSlice.reducer;

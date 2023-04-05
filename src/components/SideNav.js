@@ -23,6 +23,3 @@ const SideNav = () => {
 };
 
 export default SideNav;
-<ul>
-  <li>홈</li>
-</ul>;
