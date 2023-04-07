@@ -29,13 +29,13 @@ import {
 } from "../../style/auth/LoginStyle";
 
 const Login = () => {
-  const auth = useSelector((state) => state.isAuth);
+  const auth = useSelector((state) => state);
   const [inputs, setInputs] = useState({
-    userid: "",
-    userpw: "",
+    userId: "",
+    userPw: "",
   });
 
-  const { userid, userpw } = inputs;
+  const { userId, userPw } = inputs;
   const dispatch = useDispatch();
 
   const setInput = (e) => {
@@ -46,7 +46,7 @@ const Login = () => {
   };
 
   const loginSubmit = () => {
-    dispatch(login({ isAuth: true }));
+    dispatch(login({ isAuth: true, userId }));
   };
 
   useEffect(() => {
@@ -70,12 +70,12 @@ const Login = () => {
                 </LoginBox>
                 <LoginForm>
                   <LoginInput
-                    id="userid"
+                    id="userId"
                     onChange={setInput}
                     placeholder="전화번호, 사용자 이름 또는 이메일"
                   />
                   <LoginInput
-                    id="userpw"
+                    id="userPw"
                     onChange={setInput}
                     placeholder="비밀번호"
                   />
