@@ -1,3 +1,7 @@
+import { useEffect } from "react";
+import { useState } from "react";
+import { useSelector, useDispatch } from "react-redux";
+import { login, logout } from "../../redux/reducers";
 import {
   Section,
   Main,
@@ -25,6 +29,30 @@ import {
 } from "../../style/auth/LoginStyle";
 
 const Login = () => {
+  const auth = useSelector((state) => state.isAuth);
+  const [inputs, setInputs] = useState({
+    userid: "",
+    userpw: "",
+  });
+
+  const { userid, userpw } = inputs;
+  const dispatch = useDispatch();
+
+  const setInput = (e) => {
+    setInputs({
+      ...inputs,
+      [e.target.id]: e.target.value,
+    });
+  };
+
+  const loginSubmit = () => {
+    dispatch(login({ isAuth: true }));
+  };
+
+  useEffect(() => {
+    console.log(auth);
+  }, [auth]);
+
   return (
     <>
       <Section>
@@ -41,9 +69,17 @@ const Login = () => {
                   />
                 </LoginBox>
                 <LoginForm>
-                  <LoginInput placeholder="전화번호, 사용자 이름 또는 이메일" />
-                  <LoginInput placeholder="비밀번호" />
-                  <LoginBtn>로그인</LoginBtn>
+                  <LoginInput
+                    id="userid"
+                    onChange={setInput}
+                    placeholder="전화번호, 사용자 이름 또는 이메일"
+                  />
+                  <LoginInput
+                    id="userpw"
+                    onChange={setInput}
+                    placeholder="비밀번호"
+                  />
+                  <LoginBtn onClick={loginSubmit}>로그인</LoginBtn>
                   <LoginLine>
                     <div
                       style={{
