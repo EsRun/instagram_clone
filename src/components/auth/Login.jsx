@@ -50,7 +50,7 @@ const Login = () => {
   };
 
   useEffect(() => {
-    console.log(auth);
+    console.log("인증= ", auth);
   }, [auth]);
 
   return (
