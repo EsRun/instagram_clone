@@ -52,8 +52,8 @@ const Login = () => {
     try {
       const { data } = await API.get(URL, { userid: 123 });
       console.log(data);
-    } catch {
-      console.log("err");
+    } catch (e) {
+      console.log("err : ", e.message);
     }
     /*
     axios
