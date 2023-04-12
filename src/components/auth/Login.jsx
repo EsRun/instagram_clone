@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { login, logout } from "../../redux/reducers";
-import axios from "axios";
+import API from "../../apis/Axios";
 import {
   Section,
   Main,
@@ -46,8 +46,16 @@ const Login = () => {
     });
   };
 
-  const loginSubmit = () => {
+  const loginSubmit = async () => {
     dispatch(login({ isAuth: true, userId }));
+    const URL = "http://localhost:3333/user";
+    try {
+      const { data } = await API.get(URL, { userid: 123 });
+      console.log(data);
+    } catch {
+      console.log("err");
+    }
+    /*
     axios
       .get("http://localhost:3333/user/", { userid: 123 })
       .then((res) => {
@@ -56,6 +64,7 @@ const Login = () => {
       .catch((err) => {
         console.log(err);
       });
+      */
   };
 
   useEffect(() => {
