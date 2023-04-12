@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { login, logout } from "../../redux/reducers";
+import axios from "axios";
 import {
   Section,
   Main,
@@ -47,6 +48,14 @@ const Login = () => {
 
   const loginSubmit = () => {
     dispatch(login({ isAuth: true, userId }));
+    axios
+      .get("http://localhost:3333/user/", { userid: 123 })
+      .then((res) => {
+        console.log(res);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
   };
 
   useEffect(() => {
